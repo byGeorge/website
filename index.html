@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="bygeorge.css" type="text/css">
+<script language="JavaScript">
+	var img = new Array();
+	img[0] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/books.jpg";
+	img[1] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/home.jpg";
+	img[2] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/about.jpg";
+	img[3] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/resume.jpg";
+	img[4] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/github.jpg";
+	
+	function changeImg(pickImg){
+		var header = document.getElementById("header");
+		if (header) {
+			header.style.backgroundImage = "url("+img[pickImg]+")";
+		}
+	}
+</script>
+<div id="everything">
+	<div id="header">
+		<div id="titlebox">
+			<h1>George W. Roberts</h1>
+			<h2>Technomancer</h2>
+		</div><!-- end div titlebox -->
+		<div id="menu-box">
+			<ul id="menu">
+   				<li>
+        			<a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/index.html" onmouseover="javascript:changeImg(1)" onmouseout="javascript:changeImg(0)">Home</a>
+			    </li>
+			    <li><a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/aboutweb.html" onmouseover="javascript:changeImg(2)" onmouseout="javascript:changeImg(0)">About</a>
+			        <ul class="sub-menu">
+			            <li>
+			                <a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/aboutweb.html" onmouseover="javascript:changeImg(2)" onmouseout="javascript:changeImg(0)">Website</a>
+			            </li>
+			            <li>
+			                <a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/aboutme.html" onmouseover="javascript:changeImg(2)" onmouseout="javascript:changeImg(0)">George Roberts</a>
+			            </li>
+			        </ul>
+			    </li>
+			    <li>
+			    	<a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/gres3.pdf" onmouseover="javascript:changeImg(3)" onmouseout="javascript:changeImg(0)">View Resume</a>
+			    </li>
+			    <li>
+			    	<a href="https://github.com/bygeorge" onmouseover="javascript:changeImg(4)" onmouseout="javascript:changeImg(0)">Github</a>
+			    </li>
+			</ul>
+		</div><!-- end div menu box -->
+	</div><!-- end div header -->
+	<div id="body">
+		<h3>New!</h3>
+		<p>As some of you know, I'm trying to find a job. Something great, something exciting where I can learn lots of new things. Many of the potential hires have wanted some experience with AWS, and I'd been looking for an option other than GoDaddy. So I've moved my Rails application over to AWS, and it's working much better here.</p>
+
+		<p>Potential employers also seem to want more proficiency in JavaScript, HTML and CSS, so I'm learning and improving my skills. The last time I did anything extensive in HTML/CSS was in the '90's. JavaScript is a completely new skill. It's SO much easier than I expected it to be.</p>
+
+		<p>georgeroberts.coffee is much less boring than it was before. There's a dropdown menu,  header background and some JavaScript to switch through some backgrounds. My first bit of JavaScript doesn't seem terribly exciting, but I'm terribly excited about it anyway. The ";"s are my nemeses after so much programming in Ruby, but I'll adapt. Java, my first programming language, was also obsessed with semicolons.</p>
+
+		<h3>Next!</h3>
+		<p>I'll be attaching some of my projects (and adding a "projects" menu item) to this site. The <a href="http://npc-generator-dev.n3qa6v2tc2.us-west-2.elasticbeanstalk.com/">NPC generator</a> already has an elastic beanstalk linux server connected, but I'd like to add more projects. I'd like to add more than the Rails server.</p>
+	</div><!-- end div body -->
+</div><!-- end div everything -->
+
+</html>
