@@ -7,6 +7,7 @@
 	img[2] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/about.jpg";
 	img[3] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/resume.jpg";
 	img[4] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/github.jpg";
+	img[5] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/projects.jpg";
 	
 	function changeImg(pickImg){
 		var header = document.getElementById("header");
@@ -41,6 +42,14 @@
 			    </li>
 			    <li>
 			    	<a href="https://github.com/bygeorge" onmouseover="javascript:changeImg(4)" onmouseout="javascript:changeImg(0)">Github</a>
+			    </li>
+			    <li>
+			    	<a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/projects.html" onmouseover="javascript:changeImg(5)" onmouseout="javascript:changeImg(0)">Projects</a>
+			    	<ul class="sub-menu">
+			    		<li>
+			    			<a href="http://npc-generator-dev.n3qa6v2tc2.us-west-2.elasticbeanstalk.com/"  onmouseover="javascript:changeImg(5)" onmouseout="javascript:changeImg(0)">NPC Generator</a>
+			    		</li>
+			    	</ul>
 			    </li>
 			</ul>
 		</div><!-- end div menu box -->

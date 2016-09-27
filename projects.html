@@ -7,6 +7,7 @@
 	img[2] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/about.jpg";
 	img[3] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/resume.jpg";
 	img[4] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/github.jpg";
+	img[5] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/projects.jpg";
 	
 	function changeImg(pickImg){
 		var header = document.getElementById("header");
@@ -19,7 +20,7 @@
 	<div id="header">
 		<div id="titlebox">
 			<h1>George W. Roberts</h1>
-			<h2>Technomancer</h2>
+			<h2>Projects</h2>
 		</div><!-- end div titlebox -->
 		<div id="menu-box">
 			<ul id="menu">
@@ -42,6 +43,14 @@
 			    <li>
 			    	<a href="https://github.com/bygeorge" onmouseover="javascript:changeImg(4)" onmouseout="javascript:changeImg(0)">Github</a>
 			    </li>
+			    <li>
+			    	<a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/projects.html" onmouseover="javascript:changeImg(5)" onmouseout="javascript:changeImg(0)">Projects</a>
+			    	<ul class="sub-menu">
+			    		<li>
+			    			<a href="http://npc-generator-dev.n3qa6v2tc2.us-west-2.elasticbeanstalk.com/"  onmouseover="javascript:changeImg(5)" onmouseout="javascript:changeImg(0)">NPC Generator</a>
+			    		</li>
+			    	</ul>
+			    </li>
 			</ul>
 		</div><!-- end div menu box -->
 	</div><!-- end div header -->
@@ -60,10 +69,12 @@
 				<dd>Amazon AWS, Electric Beanstalk, Linux Server</dd>
 			<dt>Other Details</dt>
 				<dd>Previously hosted on Heroku. Was planning to use SQLite but Heroku didn't support it. Now that I know more about PostgreSQL, I probably wouldn't have cared about making the switch. PostgreSQL has more functionality than SQLite, and switching database types was easy. 10/10 would recommend</dd>
+			<dt>Code Repository</dt>
+				<dd><a href="https://github.com/byGeorge/npc-generator">Github</a></dd>
 		</dl>
 
-		<h3>Chat Server</h3>
-		<p>This was a school assignment. Ruby made this super easy.</p>
+		<h3>SuperHappyFunQuiz</h3>
+		<p>Offers quiz questions and maintains leaderboard for a Shiny Robots' Wednesday night pub quiz</p>
 		<dl>
 			<dt>Platform</dt>
 				<dd>Django</dd>
@@ -74,7 +85,25 @@
 			<dt>Hosting</dt>
 				<dd>Cerberus, a Linux server for Westminster students</dd>
 			<dt>Other Details</dt>
-				<dd>Class assignment with a partner. She couldn't get Django to work on her computer, so her job was to fill up the database with all the pub quiz questions. There were a lot of them. Django was easy to use, but limited. It seems to be designed for dabblers.</dd>
+				<dd>Class assignment with a partner. She couldn't get Django to work on her computer, so her job was to fill up the database with all the pub quiz questions. There were a lot of them. Django was easy to use, but limited. It seems to be designed for dabblers, but it did the job.</dd>
+			<dt>Code Repository</dt>
+				<dd><a href="https://github.com/byGeorge/SuperHappyFunQuiz">Github</a></dd>
+		</dl>
+		<h3>Matherator Extreme, Pretty Princess Edition</h3>
+		<p>Game designed for 1st through 3rd graders to enhance their maths skill.</p>
+		<dl>
+			<dt>Platform</dt>
+				<dd>Deploys on Mac</dd>
+			<dt>Language</dt>
+				<dd>Java</dd>
+			<dt>Database</dt>
+				<dd>MySQL</dd>
+			<dt>Hosting</dt>
+				<dd>Currently not hosted yet</dd>
+			<dt>Other Details</dt>
+				<dd>Group effort. I was responsible for the client-side GUI, and the Battleship game.</dd>
+			<dt>Code Repository</dt>
+				<dd><a href="hhttps://github.com/byGeorge/portfolio/tree/master/matherator/matherator-extreme-master">Github</a></dd>
 		</dl>
 	</div><!-- end div body -->
 </div><!-- end div everything -->
