@@ -1,78 +1,68 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="bygeorge.css" type="text/css">
-<script language="JavaScript">
-	var img = new Array();
-	img[0] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/books.jpg";
-	img[1] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/home.jpg";
-	img[2] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/about.jpg";
-	img[3] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/resume.jpg";
-	img[4] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/github.jpg";
-	img[5] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/projects.jpg";
-	
-	function changeImg(pickImg){
-		var header = document.getElementById("header");
-		if (header) {
-			header.style.backgroundImage = "url("+img[pickImg]+")";
-		}
-	}
-</script>
+<head>
+	<link rel="stylesheet" href="bygeorgedark.css" type="text/css">
+	<script type="text/javascript" src="header-menu.js"></script>
+</head>
+<body onLoad="timer()">
 <div id="everything">
 	<div id="header">
 		<div id="titlebox">
 			<h1>George W. Roberts</h1>
 			<h2>About Me</h2>
 		</div><!-- end div titlebox -->
+	</div><!-- end div header -->
+	<div id="bottom">
 		<div id="menu-box">
 			<ul id="menu">
-   				<li>
-        			<a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/index.html" onmouseover="javascript:changeImg(1)" onmouseout="javascript:changeImg(0)">Home</a>
+					<li>
+	    			<a href="index.html">Home</a>
 			    </li>
-			    <li><a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/aboutweb.html" onmouseover="javascript:changeImg(2)" onmouseout="javascript:changeImg(0)">About</a>
+			    <li><a href="aboutweb.html">About</a>
 			        <ul class="sub-menu">
 			            <li>
-			                <a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/aboutweb.html" onmouseover="javascript:changeImg(2)" onmouseout="javascript:changeImg(0)">Website</a>
+			                <a href="aboutweb.html">Website</a>
 			            </li>
 			            <li>
-			                <a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/aboutme.html" onmouseover="javascript:changeImg(2)" onmouseout="javascript:changeImg(0)">George Roberts</a>
+			                <a href="aboutme.html">George Roberts</a>
 			            </li>
 			        </ul>
 			    </li>
 			    <li>
-			    	<a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/gres3.pdf" onmouseover="javascript:changeImg(3)" onmouseout="javascript:changeImg(0)">View Resume</a>
+			    	<a href="resume.pdf">View Resume</a>
 			    </li>
 			    <li>
-			    	<a href="https://github.com/bygeorge" onmouseover="javascript:changeImg(4)" onmouseout="javascript:changeImg(0)">Github</a>
+			    	<a href="https://github.com/bygeorge">Github</a>
 			    </li>
 			    <li>
-			    	<a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/projects.html" onmouseover="javascript:changeImg(5)" onmouseout="javascript:changeImg(0)">Projects</a>
+			    	<a href="projects.html">Projects</a>
 			    	<ul class="sub-menu">
 			    		<li>
-			    			<a href="http://npc-generator-dev.n3qa6v2tc2.us-west-2.elasticbeanstalk.com/"  onmouseover="javascript:changeImg(5)" onmouseout="javascript:changeImg(0)">NPC Generator</a>
+			    			<a href="http://npc-generator-dev.n3qa6v2tc2.us-west-2.elasticbeanstalk.com/">NPC Generator</a>
 			    		</li>
 			    	</ul>
 			    </li>
 			</ul>
 		</div><!-- end div menu box -->
-	</div><!-- end div header -->
-	<div id="body">
-		<dl>
-		<dt>Why Programming?</dt>
-		<dd>As a relatively new science, there's a lot of new things happening. As the hardware improves, we can do more interesting things with the software. I'm fascinated with all the cool new things computers can do, and excited that I seem to have the talent for it.</dd>
-		<dt>Languages, Platforms and Services Oh My!</dt>
-		<dd>My mother taught me to choose the best tool for the job, and technological tools are like any other sort of tool. Assembly is like a hammer: powerful, direct, and bit clumsy. Some developers hate assembly... but sometimes you just need to smack something with a hammer to get the job done. Rails is like a laser cutter: you need to know what you're doing, but it can make beautiful things. Like any good craftsperson, I'm more fond of some tools than others, but I can use more than one.</dd>
-		<dt>What do you Know?</dt>
-		<dd>Languages: I'm most proficient in Ruby and Java, but Python was super easy. C and Assembly were more challenging, but very powerful. <br><br>
-		Platforms: Rails was challenging at first, but I absolutely love it now. Django was super easy, but limited. Spring was relatively easy to use, but required some imagination to get it to do what I wanted it to do. YAML is my favorite way to get different languages to interact.<br><br>
-		Services: AWS is very powerful, and I prefer it to GoDaddy's web hosting (which doesn't support Ruby or Rails). Heroku is fine for testing deployment, but doesn't scale well and the free version takes forever to load. <br><br>
-		Databases: MySQL, SQLite, PostgreSQL. I prefer to use an IDE to visualize databases but can program SQL if needed.<br><br>
-		Version control: <a href="https://github.com/bygeorge">Git</a>. Version control is my favorite thing about modern programming.</dd>
-		<dt>About Me, Personally</dt>
-		<dd>I'm passionate about human rights. While one of us is treated like a lesser being, we are all lesser beings. I write for fun and, occasionally, profit and have a very active transgender rights blog.<br><br>
-		Gardening is another one of my passions, and my chickens (Lunch and Dinner) love to follow me around and eat all the bugs for me. I love fresh food, and there's something about green and growing things that calms the soul.<br><br>
-		I'm not terribly good at photography, but I enjoy it. Thanks to GIMP, I can fix all the lighting and frame issues. This site doesn't have any pictures yet, but it will. Oh yes... it will... MUAAHAHAHA... err... sorry.
-		</dd>
-		</dl>
-	</div><!-- end div body -->
+		<div id="content">
+			<dl>
+				<dt>Why Programming?</dt>
+					<dd>As a relatively new science, there's a lot of new things happening. As the hardware improves, we can do more interesting things with the software. I'm fascinated with all the cool new things computers can do, and excited that I seem to have the talent for it.</dd>
+				<dt>Languages, Platforms and Services Oh My!</dt>
+					<dd>My mother taught me to choose the best tool for the job, and technological tools are like any other sort of tool. Assembly is like a hammer: powerful, direct, and bit clumsy. Some developers hate assembly... but sometimes you just need to smack something with a hammer to get the job done. Rails is like a laser cutter: you need to know what you're doing, but it can make beautiful things. Like any good craftsperson, I'm more fond of some tools than others, but I can use more than one.</dd>
+				<dt>What do you Know?</dt>
+					<dd>Languages: I'm most proficient in Ruby and Java, but Python was super easy. C and Assembly were more challenging, but very powerful. <br><br>
+					Platforms: Rails was challenging at first, but I absolutely love it now. Django was super easy, but limited. Spring was relatively easy to use, but required some imagination to get it to do what I wanted it to do. YAML is my favorite way to get different languages to interact.<br><br>
+					Services: AWS is very powerful, and I prefer it to GoDaddy's web hosting (which doesn't support Ruby or Rails). Heroku is fine for testing deployment, but doesn't scale well and the free version takes forever to load. <br><br>
+					Databases: MySQL, SQLite, PostgreSQL. I prefer to use an IDE to visualize databases but can program SQL if needed.<br><br>
+					Version control: <a href="https://github.com/bygeorge">Git</a>. Version control is my favorite thing about modern programming.</dd>
+				<dt>About Me, Personally</dt>
+					<dd>I'm passionate about human rights. While one of us is treated like a lesser being, we are all lesser beings. I write for fun and, occasionally, profit and have a very active transgender rights blog.<br><br>
+					Gardening is another one of my passions, and my chickens (Lunch and Dinner) love to follow me around and eat all the bugs for me. I love fresh food, and there's something about green and growing things that calms the soul.<br><br>
+					I'm not terribly good at photography, but I enjoy it. Thanks to GIMP, I can fix all the lighting and frame issues. This site doesn't have any pictures yet, but it will. Oh yes... it will... MUAAHAHAHA... err... sorry.
+				</dd>
+			</dl>
+		</div><!-- end div content -->
+	</div><!-- end div bottom -->
 </div><!-- end div everything -->
-
+</body>
 </html>

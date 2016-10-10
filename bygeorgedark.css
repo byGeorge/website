@@ -1,12 +1,9 @@
 #header {
-	text-align: center;
 	color: #000000;
 	border-style: double;
 	border-color: #000000;	
-	padding-top: 1rem;
-}
-
-#headerimage {
+	padding: 1rem;
+	background-image: url("images/books.jpg");
 	background-size: cover;
 }
 
@@ -19,13 +16,18 @@
 	padding-bottom: 0.5rem;
 	border-style: inset;
 	border-color: #660000;
-	position: absolute;
+	text-align: center;
+	opacity: 1;
 }
 
 body {
 	background-color: #000000;
 	color: #660000;
 	background-size: 100%;
+}
+
+#bottom {
+	display: flex;
 }
 
 ul#menu, ul#menu ul.sub-menu {
@@ -35,7 +37,7 @@ ul#menu, ul#menu ul.sub-menu {
 
 ul#menu li, ul#menu ul.sub-menu li {
     list-style-type: none;
-    display: inline-block;
+    display: block;
 }
 
 /*Link Appearance*/
@@ -62,21 +64,23 @@ ul#menu li {
 
 /*sub menu*/
 ul#menu li ul.sub-menu {
-    display:none;
+    display: none;
     position: absolute;
-    left: 0;
     width: 8em;
+    left: 8.5em;
+    bottom: 0em;
 }
 
 ul#menu li:hover ul.sub-menu {
-    display:block;
+    display: flex;
 }
 
 #menu-box {
 	padding-top: 1rem;
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 	text-align: center;
+	clear: right;
 }
 
 dt {
@@ -98,3 +102,8 @@ button:hover {
 	background: #990000;
 }
 
+#content {
+	padding-left: 3em;
+	padding-right: 8em;
+	padding-top: 1em;
+}

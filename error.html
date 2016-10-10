@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="bygeorge.css" type="text/css">
-<html>
+<script language="JavaScript">
+	var img = new Array();
+	img[0] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/books.jpg";
+	img[1] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/home.jpg";
+	img[2] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/about.jpg";
+	img[3] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/resume.jpg";
+	img[4] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/github.jpg";
+	img[5] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/projects.jpg";
+	
+	function changeImg(pickImg){
+		var header = document.getElementById("header");
+		if (header) {
+			header.style.backgroundImage = "url("+img[pickImg]+")";
+		}
+	}
+</script>
+<div id="everything">
+	<div id="header">
+		<div id="titlebox">
+			<h1>404</h1>
+			<h2>Resource not found</h2>
+		</div><!-- end div titlebox -->
+		<div id="menu-box">
+			<ul id="menu">
+   				<li>
+        			<a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/index.html" onmouseover="javascript:changeImg(1)" onmouseout="javascript:changeImg(0)">Home</a>
+			    </li>
+			    <li><a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/aboutweb.html" onmouseover="javascript:changeImg(2)" onmouseout="javascript:changeImg(0)">About</a>
+			        <ul class="sub-menu">
+			            <li>
+			                <a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/aboutweb.html" onmouseover="javascript:changeImg(2)" onmouseout="javascript:changeImg(0)">Website</a>
+			            </li>
+			            <li>
+			                <a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/aboutme.html" onmouseover="javascript:changeImg(2)" onmouseout="javascript:changeImg(0)">George Roberts</a>
+			            </li>
+			        </ul>
+			    </li>
+			    <li>
+			    	<a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/gres3.pdf" onmouseover="javascript:changeImg(3)" onmouseout="javascript:changeImg(0)">View Resume</a>
+			    </li>
+			    <li>
+			    	<a href="https://github.com/bygeorge" onmouseover="javascript:changeImg(4)" onmouseout="javascript:changeImg(0)">Github</a>
+			    </li>
+			    <li>
+			    	<a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/projects.html" onmouseover="javascript:changeImg(5)" onmouseout="javascript:changeImg(0)">Projects</a>
+			    	<ul class="sub-menu">
+			    		<li>
+			    			<a href="http://npc-generator-dev.n3qa6v2tc2.us-west-2.elasticbeanstalk.com/"  onmouseover="javascript:changeImg(5)" onmouseout="javascript:changeImg(0)">NPC Generator</a>
+			    		</li>
+			    	</ul>
+			    </li>
+			</ul>
+		</div><!-- end div menu box -->
+	</div><!-- end div header -->
 	<body>
 	    <p>EVERYTHING IS ON FIRE! WHAT DID YOU DOOOOO????</p>
-		<p>Just kidding, it's probably my fault. 
+		<p>Just kidding. Whatever you requested doesn't exist. </p>
 			<form action="mailto:admin@georgeroberts.com" method=":GET">
 				<button type="submit">report this error</button>
 				</button>
-				</form>
+			</form>
 		</p>
-		<p> Or not. Chances are, I'm already fixing it.</p>
 	</body>
 </html>

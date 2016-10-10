@@ -1,72 +1,63 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="bygeorge.css" type="text/css">
-<script language="JavaScript">
-	var img = new Array();
-	img[0] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/books.jpg";
-	img[1] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/home.jpg";
-	img[2] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/about.jpg";
-	img[3] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/resume.jpg";
-	img[4] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/github.jpg";
-	img[5] = "https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/images/projects.jpg";
-	
-	function changeImg(pickImg){
-		var header = document.getElementById("header");
-		if (header) {
-			header.style.backgroundImage = "url("+img[pickImg]+")";
-		}
-	}
-</script>
+<head>
+	<link rel="stylesheet" href="bygeorgedark.css" type="text/css">
+	<script type="text/javascript" src="header-menu.js"></script>
+</head>
+<body onLoad="timer()">
 <div id="everything">
 	<div id="header">
 		<div id="titlebox">
 			<h1>George W. Roberts</h1>
-			<h2>Information about georgeroberts.coffee</h2>
+			<h2>About This Website</h2>
 		</div><!-- end div titlebox -->
+	</div><!-- end div header -->
+	<div id="bottom">
 		<div id="menu-box">
 			<ul id="menu">
-   				<li>
-        			<a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/index.html" onmouseover="javascript:changeImg(1)" onmouseout="javascript:changeImg(0)">Home</a>
+					<li>
+	    			<a href="index.html">Home</a>
 			    </li>
-			    <li><a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/aboutweb.html" onmouseover="javascript:changeImg(2)" onmouseout="javascript:changeImg(0)">About</a>
+			    <li><a href="aboutweb.html">About</a>
 			        <ul class="sub-menu">
 			            <li>
-			                <a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/aboutweb.html" onmouseover="javascript:changeImg(2)" onmouseout="javascript:changeImg(0)">Website</a>
+			                <a href="aboutweb.html">Website</a>
 			            </li>
 			            <li>
-			                <a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/aboutme.html" onmouseover="javascript:changeImg(2)" onmouseout="javascript:changeImg(0)">George Roberts</a>
+			                <a href="aboutme.html">George Roberts</a>
 			            </li>
 			        </ul>
 			    </li>
 			    <li>
-			    	<a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/gres3.pdf" onmouseover="javascript:changeImg(3)" onmouseout="javascript:changeImg(0)">View Resume</a>
+			    	<a href="resume.pdf">View Resume</a>
 			    </li>
 			    <li>
-			    	<a href="https://github.com/bygeorge" onmouseover="javascript:changeImg(4)" onmouseout="javascript:changeImg(0)">Github</a>
+			    	<a href="https://github.com/bygeorge">Github</a>
 			    </li>
 			    <li>
-			    	<a href="https://s3-us-west-2.amazonaws.com/georgeroberts.coffee/projects.html" onmouseover="javascript:changeImg(5)" onmouseout="javascript:changeImg(0)">Projects</a>
+			    	<a href="projects.html">Projects</a>
 			    	<ul class="sub-menu">
 			    		<li>
-			    			<a href="http://npc-generator-dev.n3qa6v2tc2.us-west-2.elasticbeanstalk.com/"  onmouseover="javascript:changeImg(5)" onmouseout="javascript:changeImg(0)">NPC Generator</a>
+			    			<a href="http://npc-generator-dev.n3qa6v2tc2.us-west-2.elasticbeanstalk.com/">NPC Generator</a>
 			    		</li>
 			    	</ul>
 			    </li>
 			</ul>
 		</div><!-- end div menu box -->
-	</div><!-- end div header -->
-	<div id="body">
-		<dl>
-		<dt>Hosting</dt>
-		<dd>Amazon Web Services (AWS). This is an absolutely fabulous resource that scales easily. Tiny projects like this have very minimal cost, and you can set limits on scaling so your website doesn't accidentally get a Reddit hug that costs tens of thousands of dollars. If you're part of a larger corporation, you can quickly scale applications to accommodate surges in consumer activity (if a billion people show up to shop at your site on Black Friday, your website will not go down).</dd>
-		<dt>Language</dt>
-		<dd>Web pages are in HTML with a CSS stylesheet, like any other web page. Javascript (and Angular) is on my list of Things To Learn Next, but the last time I used HTML/CSS was in 1998. I love the capabilities of the new versions, and am really enjoying building this website. IT DOES SO MANY COOL NEW THINGS!!!11!!one!!</dd>
-		<dt>Method</dt>
-		<dd>I'm a big fan of robust IDEs with lots of features and good error reporting, like InDesign, but HTML and CSS are so simple that there's no point. I edit with <a href="http://www.sublimetext.com/">Sublime</a> because it's easy to use and still has autocomplete.</dd>
-		<dt>Testing</dt>
-		<dd>Tested on Firefox and Chrome in a Linux environment. Not yet optimized for mobile.</dd>
-		<dt>Up Next</dt>
-		<dd>Right now, I'm working on giving the website a more interesting look, adding features and projects as I learn. AWS supports every platform and language I've ever done a project in, so at least a few of them will show up under the "projects" page. When it exists.</dd>
-		</dl>
-	</div><!-- end div body -->
+		<div id="content">
+			<dl>
+			<dt>Hosting</dt>
+			<dd>Amazon Web Services (AWS). This is an absolutely fabulous resource that scales easily. Tiny projects like this have very minimal cost, and you can set limits on scaling so your website doesn't accidentally get a Reddit hug that costs tens of thousands of dollars. If you're part of a larger corporation, you can quickly scale applications to accommodate surges in consumer activity (if a billion people show up to shop at your site on Black Friday, your website will not go down).</dd>
+			<dt>Language</dt>
+			<dd>Web pages are in HTML with a CSS stylesheet, like any other web page. Javascript (and Angular) is on my list of Things To Learn Next, but the last time I used HTML/CSS was in 1998. I love the capabilities of the new versions, and am really enjoying building this website. IT DOES SO MANY COOL NEW THINGS!!!11!!one!!</dd>
+			<dt>Method</dt>
+			<dd>I'm a big fan of robust IDEs with lots of features and good error reporting, like InDesign, but HTML and CSS are so simple that there's no point. I edit with <a href="http://www.sublimetext.com/">Sublime</a> because it's easy to use and still has autocomplete.</dd>
+			<dt>Testing</dt>
+			<dd>Tested on Firefox and Chrome in a Linux environment. Not yet optimized for mobile.</dd>
+			<dt>Up Next</dt>
+			<dd>Right now, I'm working on giving the website a more interesting look, adding features and projects as I learn. AWS supports every platform and language I've ever done a project in, so at least a few of them will show up under the "projects" page. When it exists.</dd>
+			</dl>
+		</div><!-- end div content -->
+	</div><!-- end div bottom -->
 </div><!-- end div everything -->
+</body>
 </html>
