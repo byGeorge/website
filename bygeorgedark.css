@@ -3,8 +3,9 @@
 	border-style: double;
 	border-color: #000000;	
 	padding: 1rem;
-	background-image: url("images/books.jpg");
+	background-image: url("images/home.jpg");
 	background-size: cover;
+	border-radius: 25%;
 }
 
 #titlebox {
@@ -16,6 +17,7 @@
 	padding-bottom: 0.5rem;
 	border-style: inset;
 	border-color: #660000;
+	border-radius: 10%;
 	text-align: center;
 	opacity: 1;
 }
@@ -45,11 +47,13 @@ ul#menu li a, ul#menu li ul.sub-menu li a {
     text-decoration: none;
     color: #000000;
     background: #660000;
-    padding: .1em;
+    padding: .5em;
     width: 8em;
     display: inline-block;
     border-style: outset;
     border-color: #660000;
+    border-radius: 25%;
+    border-width: .1em;
 }
 
 ul#menu li:hover a, ul#menu li:hover ul.sub-menu li:hover a {
@@ -67,7 +71,7 @@ ul#menu li ul.sub-menu {
     display: none;
     position: absolute;
     width: 8em;
-    left: 8.5em;
+    left: 9em;
     bottom: 0em;
 }
 

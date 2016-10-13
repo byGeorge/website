@@ -1,31 +1,48 @@
 #header {
-	text-align: center;
-	color: #000000;
+	color: #333333;
 	border-style: double;
-	border-color: #000000;	
-	padding-top: 1rem;
+	border-color: #cccccc;	
+	padding: 1rem;
+	background-size: cover;
+	border-radius: 25%;
+	background-image: url("images/bg.jpg");
 }
 
 #headerimage {
+	position: absolute;
+	border-style: double;
+	background-image: url("images/books.jpg");
 	background-size: cover;
+	border-radius: 25%;
+	left: .5rem;
+	right: .5rem;
+	top: .5rem;
+	min-height: 11.5rem;
 }
 
 #titlebox {
-	background-color: #660000;
+	background-color: #cccccc;
+	color: #660000;
 	margin-right: 30%;
 	margin-left: 30%;
 	position: relative;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 	border-style: inset;
-	border-color: #660000;
-	position: absolute;
+	border-radius: 10%;
+	text-align: center;
+	opacity: 0.75;
 }
 
 body {
-	background-color: #000000;
-	color: #660000;
+	background-color: #cccccc;
+	color: #333333;
 	background-size: 100%;
+	font-family: sans-serif;
+}
+
+#bottom {
+	display: flex;
 }
 
 ul#menu, ul#menu ul.sub-menu {
@@ -35,24 +52,29 @@ ul#menu, ul#menu ul.sub-menu {
 
 ul#menu li, ul#menu ul.sub-menu li {
     list-style-type: none;
-    display: inline-block;
+    display: block;
 }
 
 /*Link Appearance*/
 ul#menu li a, ul#menu li ul.sub-menu li a {
     text-decoration: none;
     color: #000000;
-    background: #660000;
-    padding: .1em;
+    background: #cccccc;
+    padding: .5em;
     width: 8em;
     display: inline-block;
     border-style: outset;
     border-color: #660000;
+    border-radius: 40%;
+    border-width: .1em;
+    border-top-width: 0;
+	border-left-width: 0;
 }
 
 ul#menu li:hover a, ul#menu li:hover ul.sub-menu li:hover a {
-    background: #990000;
+    background: #660000;
     border-style: inset;
+    color: #cccccc;
 }
 
 /*Make the parent of sub-menu relative*/
@@ -62,21 +84,23 @@ ul#menu li {
 
 /*sub menu*/
 ul#menu li ul.sub-menu {
-    display:none;
+    display: none;
     position: absolute;
-    left: 0;
     width: 8em;
+    left: 9em;
+    bottom: 0em;
 }
 
 ul#menu li:hover ul.sub-menu {
-    display:block;
+    display: flex;
 }
 
 #menu-box {
 	padding-top: 1rem;
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 	text-align: center;
+	clear: right;
 }
 
 dt {
@@ -98,3 +122,8 @@ button:hover {
 	background: #990000;
 }
 
+#content {
+	padding-left: 3em;
+	padding-right: 8em;
+	padding-top: 1em;
+}
