@@ -1,37 +1,51 @@
 #header {
 	color: #333333;
-	border-style: double;
-	border-color: #cccccc;	
 	padding: 1rem;
 	background-size: cover;
 	border-radius: 25%;
-	background-image: url("images/bg.jpg");
+	border-style: outset;
+    border-color: #660000;
+    border-width: .1em;
+    border-top-width: 0;
+	border-left-width: 0;
+	position:relative;
+
 }
 
 #headerimage {
 	position: absolute;
-	border-style: double;
 	background-image: url("images/books.jpg");
 	background-size: cover;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	opacity: 0.5;
 	border-radius: 25%;
-	left: .5rem;
-	right: .5rem;
-	top: .5rem;
-	min-height: 11.5rem;
+}
+
+#headerfader {
+	position: absolute;
+	background-image: url("images/books.jpg");
+	background-size: cover;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	opacity: 0.5;
+	border-radius: 25%;
 }
 
 #titlebox {
-	background-color: #cccccc;
-	color: #660000;
+	opacity: 1;
+	color: #000000;
 	margin-right: 30%;
 	margin-left: 30%;
 	position: relative;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
-	border-style: inset;
 	border-radius: 10%;
 	text-align: center;
-	opacity: 0.75;
 }
 
 body {
@@ -127,3 +141,5 @@ button:hover {
 	padding-right: 8em;
 	padding-top: 1em;
 }
+
+/* CSS classes to change "mode" */
