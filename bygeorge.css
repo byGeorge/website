@@ -109,9 +109,34 @@ ul#menu li:hover ul.sub-menu {
     display: flex;
 }
 
+#menu-box input[type=submit] {
+	display: flex;
+	font-size: 0.75em;
+	justify-content: space-between;
+	background: #cccccc;
+	color: #000000;
+	display: inline-block;
+    border-style: outset;
+    border-color: #660000;
+    border-radius: 40%;
+    border-width: .1em;
+    border-top-width: 0;
+	border-left-width: 0;
+}
+
+#menu-box input[type=submit]:hover {
+	color: #cccccc;
+	background: #660000;
+}
+
+.selected-mode {
+	color: #cccccc;
+	background: #660000;
+}
+
 #menu-box {
 	padding-top: 1rem;
-	display: flex;
+	display: inline-block;
 	justify-content: left;
 	text-align: center;
 	clear: right;
@@ -143,3 +168,8 @@ button:hover {
 }
 
 /* CSS classes to change "mode" */
+.dark {
+	background-color: #000000;
+	color: #660000;
+}
+

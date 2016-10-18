@@ -22,7 +22,19 @@ function changeImg(){
 	$('#headerfader').css("background-image", "url("+img[inc]+")");
 }
 
-function timer() {
+function showMode(){
+	if (location.search.substring(1).split('&') == "mode=Dark") {
+		$('#everything').addClass('dark');
+		$(document.body).css("background-color", "#000000");
+		$('ul#menu li a, ul#menu li ul.sub-menu li a').css("background-color", "#000000");
+		$('ul#menu li a, ul#menu li ul.sub-menu li a').css("color", "#660000");
+		$('#menu-box input[type=submit]').css("background-color", "#000000");
+		$('#menu-box input[type=submit]').css("color", "#660000");
+	}
+}
+
+function setup() {
+	showMode();
 	setInterval(changeImg, INTERVAL);
 }
 

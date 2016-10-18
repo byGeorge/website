@@ -4,7 +4,7 @@
 	<script src="jquery.js"></script>
 	<script type="text/javascript" src="header-menu.js"></script>
 </head>
-<body onLoad="timer()">
+<body onLoad="setup()">
 <div id="everything">
 	<div id="header">
 		<div id="headerfader"></div>
@@ -45,6 +45,11 @@
 			    	</ul>
 			    </li>
 			</ul>
+			<form>
+				<input type="submit" name="mode" value="Light">
+				<input type="submit" name="mode" value="Dark">
+				<input type="submit" name="mode" value="80s">
+			</form>
 		</div><!-- end div menu box -->
 		<div id="content">
 			<dl>
@@ -66,6 +71,6 @@
 			</dl>
 		</div><!-- end div content -->
 	</div><!-- end div bottom -->
-</div><!-- end div everything -->
 </body>
+</div><!-- end div everything -->
 </html>
