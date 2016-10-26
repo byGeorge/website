@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <div id="everything">
 <head>
-	<link rel="stylesheet" href="bygeorge.css" type="text/css">
+	<link rel="stylesheet" href="bygeorge.css" type="text/css" title="light" id="styleme">
 	<script src="jquery.js"></script>
 	<script type="text/javascript" src="header-menu.js"></script>
 </head>
@@ -46,9 +46,9 @@
 			    </li>
 			</ul>
 			<form>
-				<input type="submit" name="mode" value="Light">
-				<input type="submit" name="mode" value="Dark">
-				<input type="submit" name="mode" value="80s">
+				<input type="submit" onclick="showMode('light')" name="mode" value="Light">
+				<input type="submit" onclick="showMode('dark')" name="mode" value="Dark">
+				<input type="submit" onclick="showMode('80s')" name="mode" value="80s">
 			</form>
 		</div><!-- end div menu box -->
 		<div id="content">
