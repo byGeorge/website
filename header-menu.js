@@ -26,7 +26,6 @@ function changeImg(){
 
 function showMode(mode){
 	if (location.search.substring(1).split('&') == "mode=Dark") {
-		var poop = document.getElementById("styleme");
 		document.getElementById("styleme").setAttribute("href", "bygeorgedark.css");
 	}
 }

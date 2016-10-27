@@ -1,13 +1,7 @@
 #header {
 	color: #333333;
-	padding: 1rem;
 	background-size: cover;
-	border-radius: 25%;
-	border-style: outset;
-    border-color: #660000;
-    border-width: .1em;
-    border-top-width: 0;
-	border-left-width: 0;
+	padding: 0;
 	position:relative;
 
 }
@@ -16,24 +10,22 @@
 	position: absolute;
 	background-image: url("images/books.jpg");
 	background-size: cover;
-	left: 0;
-	right: 0;
-	top: 0;
+	left: -1em;
+	right: -1em;
+	top: -1em;
 	bottom: 0;
 	opacity: 0.5;
-	border-radius: 25%;
 }
 
 #headerfader {
 	position: absolute;
 	background-image: url("images/books.jpg");
 	background-size: cover;
-	left: 0;
-	right: 0;
-	top: 0;
+	left: -1em;
+	right: -1em;
+	top: -1em;
 	bottom: 0;
 	opacity: 0.5;
-	border-radius: 25%;
 }
 
 #titlebox {
@@ -44,7 +36,6 @@
 	position: relative;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
-	border-radius: 10%;
 	text-align: center;
 }
 
@@ -57,6 +48,12 @@ body {
 
 #bottom {
 	display: flex;
+}
+
+#menu {
+	border-right-style: solid;
+	border-width: .1em;
+	border-color: rgba(102, 0, 0, 0.5);
 }
 
 ul#menu, ul#menu ul.sub-menu {
@@ -74,21 +71,24 @@ ul#menu li a, ul#menu li ul.sub-menu li a {
     text-decoration: none;
     color: #000000;
     background: #cccccc;
+    opacity: .5;
     padding: .5em;
     width: 8em;
     display: inline-block;
-    border-style: outset;
+    border-style: solid;
     border-color: #660000;
-    border-radius: 40%;
-    border-width: .1em;
-    border-top-width: 0;
-	border-left-width: 0;
+    border-bottom-right-radius: 50%;
+    border-width: 0;
+    border-bottom-width: 0.1em;
+}
+
+ul#menu li ul.sub-menu li a {
+	border-bottom-left-radius: 50%;
+	border-left-width: .1em;
 }
 
 ul#menu li:hover a, ul#menu li:hover ul.sub-menu li:hover a {
-    background: #660000;
-    border-style: inset;
-    color: #cccccc;
+    opacity: 1;
 }
 
 /*Make the parent of sub-menu relative*/
@@ -109,37 +109,39 @@ ul#menu li:hover ul.sub-menu {
     display: flex;
 }
 
+#menu-box form {
+	border-style: solid;
+	border-width: .1em;
+	border-color: rgba(102, 0, 0, 0.5);
+    border-top-width: 0;
+	border-left-width: 0;
+	border-bottom-right-radius: 50%;
+}
+
 #menu-box input[type=submit] {
+	opacity: 0.5;
 	display: flex;
 	font-size: 0.75em;
 	justify-content: space-between;
 	background: #cccccc;
 	color: #000000;
 	display: inline-block;
-    border-style: outset;
-    border-color: #660000;
-    border-radius: 40%;
-    border-width: .1em;
-    border-top-width: 0;
-	border-left-width: 0;
+	border-style: none;
+	padding-bottom: .5em;
+	border-bottom-right-radius: 50%;
 }
 
 #menu-box input[type=submit]:hover {
-	color: #cccccc;
-	background: #660000;
-}
-
-.selected-mode {
-	color: #cccccc;
-	background: #660000;
+	opacity: 1;
 }
 
 #menu-box {
-	padding-top: 1rem;
 	display: inline-block;
 	justify-content: left;
 	text-align: center;
 	clear: right;
+	margin-left: -1em;
+	top: -1em;
 }
 
 dt {
@@ -148,33 +150,8 @@ dt {
 	text-decoration: underline;
 }
 
-button {
-	text-decoration: none;
-	color: #000000;
-	background: #660000;
-	border-style: outset;
-	border-color: #660000;
-}
-
-button:hover {
-	border-style: inset;
-	background: #990000;
-}
-
 #content {
 	padding-left: 3em;
 	padding-right: 8em;
 	padding-top: 1em;
 }
-
-/* CSS classes to change "mode" */
-.dark {
-	background-color: #000000;
-	color: #660000;
-}
-
-.darkHover {
-	color: #cccccc;
-	background-color: #660000;
-}
-
