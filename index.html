@@ -46,23 +46,33 @@
 			    </li>
 			</ul>
 			<form>
-				<input type="submit" onclick="showMode('light')" name="mode" value="Light">
-				<input type="submit" onclick="showMode('dark')" name="mode" value="Dark">
-				<input type="submit" onclick="showMode('80s')" name="mode" value="80's">
+				<input type="submit" name="mode" value="Light">
+				<input type="submit" name="mode" value="Dark">
+				<input type="submit" name="mode" value="80s">
 			</form>
 		</div><!-- end div menu box -->
 		<div id="content">
-			<h3>New!</h3>
-			<p>As some of you know, I'm trying to find a job. Something great, something exciting where I can learn lots of new things. Many of the potential hires have wanted some experience with AWS, and I'd been looking for an option other than GoDaddy. So I've moved my Rails application over to AWS, and it's working much better here.</p>
+			<div class="blog">
+			<script src="blog.js"></script>
+				<h3>Favorite Development Language?</h3>
+				<h4>November 3, 2016</h4>
+				<p>I was asked this when applying for a really awesome company, and I had no idea how to answer. It's not that I'm fickle, but my favorite language is always the one I'm using at the time. My first language was Apple Basic, and I loved writing programs, even though I couldn't save them. I've used a lot of languages over the years, and I've loved every one of them. </p>
+				<p>It's like choosing a favorite child. I even loved programming in assembly. C was harder to learn, but extremely useful. Java isn't very good at anything in particular, but it does do almost everything and is still occasionally useful. I just learned JavaScript, and I love all of the cool things it can do. I'm teaching my 11-year-old to code in Ruby because it's THAT simple to learn. The asteroids game that's going to hang out on the 80's mode is going to be written in Python. Why? Because Python is awesome and Pygame is making game creation easy.</p>
+				<h3>New!</h3>
+				<p>Modes now working. It's not persistent yet, but I haven't decided whether to use cookies yet or not. Built framework for blog style and implemented it.</p>
+				<h4>Next!</h4>
+				<p>Building an Asteroids clone with Pygame that will only be visible on 80's mode. Of course. I less-than-three Python.</p>
+				<p class="tags">Ruby, Java, Python, C, Pygame, JavaScript, Assembly, Apple Basic</p>
+			</div>
+			<div class="blog">
+				<h4>October 26, 2016</h4>
+				<h3>New!</h3>
+				<p>As some of you know, I'm trying to find a job. Something great, something exciting where I can learn lots of new things. Many of the potential employers have wanted some experience with AWS, and I'd been looking for an option other than GoDaddy. So I've moved my Rails application over to AWS, and it's working much better here.</p>
 
-			<p>Potential employers also seem to want more proficiency in JavaScript, HTML and CSS, so I'm improving my skills. The last time I did anything extensive in HTML/CSS was in the '90's. JavaScript is a relatively new skill. It's SO much easier than I expected it to be. I've recently done some backend updates to make the site easier to manage.</p>
-
-			<p>I got some feedback about this site. He said it was great, except that it looked like it was done in 1997. After a few question to get more specific suggestions, I've (hopefully) brought it up to date. I find the dark red and black colour scheme easy to look at, but it's also out of style. It'll be a night mode toggle and, just for fun, '80s mode. </p>
-
-			<p>Edit: nope. He says 2005. We're getting closer, anyway. Apparently the blocky button look is out. I've never been terribly fashionable. Fortunately, I have friends who are.</p>
-
-			<h3>Next!</h3>
-			<p>I'll be attaching some of my projects (and adding a "projects" menu item) to this site. The <a href="http://npc-generator-dev.n3qa6v2tc2.us-west-2.elasticbeanstalk.com/">NPC generator</a> already has an elastic beanstalk linux server connected, but I'd like to add more projects. I'd like to add more than the Rails server.</p>
+				<h3>Next!</h3>
+				<p>Instead of updates, I'm going to turn this into a more blog-style format. That'll make the page easier to update and, if you're very, very bored, you'll be able to track my progress.</p>
+				<p class="tags">GoDaddy, AWS, Ruby, Rails</p>
+			</div>
 		</div><!-- end div content -->
 	</div><!-- end div bottom -->
 </body><!-- end body -->

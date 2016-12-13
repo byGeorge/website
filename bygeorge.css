@@ -30,17 +30,18 @@
 
 #titlebox {
 	opacity: 1;
-	color: #000000;
+	color: #eeeeee;
 	margin-right: 30%;
 	margin-left: 30%;
 	position: relative;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 	text-align: center;
+	text-shadow: 0 0 2px black;
 }
 
 body {
-	background-color: #cccccc;
+	background-color: #eeeeee;
 	color: #333333;
 	background-size: 100%;
 	font-family: sans-serif;
@@ -70,8 +71,8 @@ ul#menu li, ul#menu ul.sub-menu li {
 ul#menu li a, ul#menu li ul.sub-menu li a {
     text-decoration: none;
     color: #000000;
-    background: #cccccc;
-    opacity: .5;
+    background: #eeeeee;
+    opacity: .75;
     padding: .5em;
     width: 8em;
     display: inline-block;
@@ -116,18 +117,20 @@ ul#menu li:hover ul.sub-menu {
     border-top-width: 0;
 	border-left-width: 0;
 	border-bottom-right-radius: 50%;
+	padding-bottom: .3em;
 }
 
 #menu-box input[type=submit] {
-	opacity: 0.5;
+	opacity: 0.75;
 	display: flex;
 	font-size: 0.75em;
 	justify-content: space-between;
-	background: #cccccc;
+	background: #eeeeee;
 	color: #000000;
 	display: inline-block;
 	border-style: none;
 	padding-bottom: .5em;
+	padding-top: .5em;
 	border-bottom-right-radius: 50%;
 }
 
@@ -154,4 +157,12 @@ dt {
 	padding-left: 3em;
 	padding-right: 8em;
 	padding-top: 1em;
+}
+
+.blog {
+
+}
+
+.blog p {
+	display: none;
 }

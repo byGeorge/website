@@ -24,9 +24,12 @@ function changeImg(){
 	$('#headerfader').css("background-image", "url("+img[inc]+")");
 }
 
-function showMode(mode){
+function showMode(){
 	if (location.search.substring(1).split('&') == "mode=Dark") {
 		document.getElementById("styleme").setAttribute("href", "bygeorgedark.css");
+	}
+	else if (location.search.substring(1).split('&') == "mode=80s") {
+		document.getElementById("styleme").setAttribute("href", "bygeorge80s.css");
 	}
 }
 

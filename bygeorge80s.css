@@ -1,0 +1,100 @@
+body {
+	background-color: black;
+	color: #999999;
+}
+
+#header {
+	background-color: #999999;
+	color: black;
+	padding-left: 1em;
+	border-style: outset;
+    border-color: #cccccc;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+ul#menu {
+	text-align: center;
+}
+
+ul#menu, ul#menu ul.sub-menu {
+    padding:0;
+    margin: 0;
+}
+
+ul#menu li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+ul#menu ul.sub-menu li {
+	display: block;
+}
+
+/*Link Appearance*/
+ul#menu li a, ul#menu li ul.sub-menu li a {
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    background: #999999;
+    padding: .5em;
+    width: 8em;
+    display: inline-block;
+    border-style: outset;
+    border-color: #cccccc;
+}
+
+ul#menu li:hover a, ul#menu li:hover ul.sub-menu li:hover a {
+    border-style: inset;
+}
+
+/*Make the parent of sub-menu relative*/
+ul#menu li {
+    position: relative;
+}
+
+/*sub menu*/
+ul#menu li ul.sub-menu {
+    display: none;
+    position: absolute;
+    width: 8em;
+    left: 9em;
+    bottom: 0em;
+}
+
+ul#menu li:hover ul.sub-menu {
+    display: inline-block;
+    top: 2.5em;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#menu-box input[type=submit] {
+	display: flex;
+	font-size: 0.75em;
+	background: #999999;
+	color: #000000;
+	display: inline-block;
+	border-style: outset;
+	min-width: 4em;
+}
+
+#menu-box input[type=submit]:hover {
+	border-style: inset;
+}
+
+#menu-box {
+	clear: right;
+	padding-top: 1px;
+}
+
+#content {
+	border: inset #999999;
+	margin-left: 12em;
+	margin-right: 8em;
+	margin-top: -1em;
+	color: green;
+	padding: 1em;
+}
